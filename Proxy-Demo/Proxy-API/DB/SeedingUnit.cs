@@ -6,10 +6,10 @@ namespace Proxy_API.DB
     {
         public async Task SeedData()
         {
-            var projects = new List<Projects>();
+            var projects = new List<Project>();
             for (int i = 0; i < 100000; i++)
             {
-                projects.Add(new Projects()
+                projects.Add(new Project()
                 {
                     Budget = Random.Shared.Next(1000, 1000000),
                     Code = Guid.NewGuid().ToString(),

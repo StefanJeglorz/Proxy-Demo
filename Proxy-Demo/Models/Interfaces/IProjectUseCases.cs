@@ -2,6 +2,6 @@
 {
     public interface IProjectUseCases
     {
-        IAsyncEnumerable<Projects> GetProjectsAsync();
+        IAsyncEnumerable<Project> GetProjectsAsync();
     }
 }

@@ -1,3 +1,3 @@
 ﻿Console.WriteLine("Proxy Pattern \n");
 
-Console.WriteLine("Loading Projects from API \n");
+Console.WriteLine("Loading Project from API \n");

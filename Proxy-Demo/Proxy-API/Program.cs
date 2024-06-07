@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Models;
 using Models.Interfaces;
 using Proxy_API.DB;
 using Proxy_API.Services;
@@ -35,8 +36,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/Projects/GetListAsAsyncEnumerableAsync", ([FromServices] IProjectUseCases projectUseCases) => projectUseCases.GetProjectsAsync())
-.WithName("Get Projects")
+app.MapGet($"/api/{nameof(Project)}/{nameof(IProjectUseCases.GetProjectsAsync)}", ([FromServices] IProjectUseCases projectUseCases) => projectUseCases.GetProjectsAsync())
+.WithName(nameof(IProjectUseCases.GetProjectsAsync))
 .WithOpenApi();
 
 app.Run();

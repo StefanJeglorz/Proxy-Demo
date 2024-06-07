@@ -2,7 +2,7 @@
 
 namespace Models
 {
-    public class Projects
+    public class Project
     {
         [Key]
         public int Id { get; set; }

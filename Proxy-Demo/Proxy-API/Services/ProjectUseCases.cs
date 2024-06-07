@@ -1,4 +1,5 @@
 ﻿using Models;
+using Models.Interfaces;
 using Proxy_API.DB;
 
 namespace Proxy_API.Services
@@ -9,10 +10,5 @@ namespace Proxy_API.Services
         {
             return context.Projects.AsAsyncEnumerable();
         }
-    }
-
-    public interface IProjectUseCases
-    {
-        IAsyncEnumerable<Projects> GetProjectsAsync();
     }
 }

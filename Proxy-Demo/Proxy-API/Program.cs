@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Writers;
+using Models.Interfaces;
 using Proxy_API.DB;
 using Proxy_API.Services;
 
